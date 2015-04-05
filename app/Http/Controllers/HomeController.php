@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Shortener\Http\Controllers;
 
 class HomeController extends Controller {
 
