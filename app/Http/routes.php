@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
-
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('/', 'LinkController@create');
+Route::get('links', 'LinkController@index');
+Route::post('links', 'LinkController@store');
